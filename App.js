@@ -17,13 +17,14 @@ import {
 } from 'react-native';
 import HomeScreen from './src/screens/HomeScreen';
 import BottomBar from './src/components/Home/BottomBar';
+import DetailScreen from './src/screens/DetailScreen';
 
 const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView style={styles.flex}>
-        <HomeScreen />
+        <DetailScreen />
         <BottomBar />
       </SafeAreaView>
     </>
@@ -33,6 +34,7 @@ const App = () => {
 const styles = StyleSheet.create({
   flex: {
     flex: 1,
+    backgroundColor: '#fff',
   },
 });
 
